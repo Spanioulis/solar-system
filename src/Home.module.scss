@@ -1,0 +1,10 @@
+.main {
+   @include container;
+   @include f-normal;
+   @include flexbox(flex, column, nowrap, space-between, center);
+   // @include neo(50px, 21px);
+
+   h1 {
+      @include f-big;
+   }
+}

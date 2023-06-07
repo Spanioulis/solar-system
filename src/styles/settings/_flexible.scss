@@ -1,0 +1,26 @@
+// Flexbox
+@mixin flexbox($dis, $direction, $wrap, $just, $align, $gap: 0rem) {
+   display: $dis;
+   flex-flow: $direction $wrap;
+   justify-content: $just;
+   align-items: $align;
+   gap: $gap;
+}
+
+// Grid
+@mixin grid($columns, $gap) {
+   display: grid;
+   grid-template-columns: repeat($columns, 1fr);
+   gap: $gap;
+
+   // @include for-phone {
+   //    grid-template-columns: 1fr;
+   //    gap: 0rem;
+   // }
+}
+
+// Align center
+@mixin gridCenter {
+   display: grid;
+   place-items: center;
+}

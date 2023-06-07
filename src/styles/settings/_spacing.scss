@@ -1,0 +1,10 @@
+$pad: 1.25rem;
+$pad-m: 0.6rem;
+
+@mixin container {
+   padding: $pad;
+
+   @include for-phone {
+      padding: $pad-m;
+   }
+}

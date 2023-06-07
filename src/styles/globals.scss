@@ -1,0 +1,14 @@
+// reset
+@import 'globals/reset';
+
+// basic global styles
+@import 'globals/base';
+
+//? colors
+$primary-color: purple;
+$secondary-color: lightgray;
+
+body {
+   background-color: $primary-color;
+   color: $secondary-color;
+}

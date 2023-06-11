@@ -1,10 +1,29 @@
-.main {
+.header {
    @include container;
    @include f-normal;
-   @include flexbox(flex, column, nowrap, space-between, center);
-   // @include neo(50px, 21px);
 
-   h1 {
-      @include f-big;
+   color: $white;
+
+   .navbar {
+      @include flexbox(flex, row, nowrap, space-between, center);
+      // @include neo(50px, 21px);
+      @include richtext;
+
+      h1 {
+         @include f-big;
+         color: $blue;
+      }
+
+      a {
+         color: $red;
+
+         &.second-anchor {
+            color: $darkergray;
+         }
+      }
    }
+}
+
+.main {
+   @include container;
 }

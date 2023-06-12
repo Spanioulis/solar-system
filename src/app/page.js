@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../Home.module.scss';
 
@@ -10,9 +11,7 @@ export default function Home() {
          <header className={styles.header}>
             <nav className={styles.navbar}>
                <h1>Solar System</h1>
-               <a href="https://www.nasa.gov/" target="_blank" rel="noreferrer noopener">
-                  NASA
-               </a>
+               <Link href="/planets">Planets</Link>
                <a
                   href="https://spanioulis.dev/"
                   target="_blank"

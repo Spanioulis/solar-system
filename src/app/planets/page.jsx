@@ -27,8 +27,11 @@ export default async function Moon() {
                </div>
                <header className={styles.header}>
                   <nav className={styles.navbar}>
+                     <Image src="/assets/moon.png" alt="Moon" width={100} height={100} />
+                     <Image src="/assets/blue_moon.png" alt="Moon" width={100} height={100} />
+                     <Image src="/assets/red_moon.png" alt="Moon" width={100} height={100} />
+                     <Image src="/assets/moon.png" alt="Moon" width={100} height={100} />
                      <Link href="/">Home</Link>
-                     <p style={{ color: 'whitesmoke' }}>Moon</p>
                   </nav>
                </header>
                <main className={styles.main}>

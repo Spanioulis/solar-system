@@ -11,7 +11,7 @@ export default function Home() {
          <header className={styles.header}>
             <nav className={styles.navbar}>
                <h1>Solar System</h1>
-               <Link href="/planets">Planets</Link>
+               <Link href="/planets">Moon</Link>
                <a
                   href="https://spanioulis.dev/"
                   target="_blank"

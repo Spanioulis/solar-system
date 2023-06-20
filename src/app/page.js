@@ -22,7 +22,7 @@ export default function Home() {
 
                <nav className={styles.nav1}>
                   <Link href="/planets">Planets</Link>
-                  <Link href="/">Moon</Link>
+                  <Link href="/moon">Moon</Link>
                   <Link href="/">Sun</Link>
                </nav>
 
@@ -38,7 +38,13 @@ export default function Home() {
                </nav>
             </nav>
          </header>
-         <main className={styles.main}></main>
+         <main className={styles.main}>
+            <div className={styles.container}>
+               <div>
+                  <Image src="/assets/atronaut_01.png" width={250} height={250} alt="Astronaut image" />
+               </div>
+            </div>
+         </main>
       </>
    );
 }

@@ -1,6 +1,9 @@
+// 'use client';
+
+// import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../../styles/pages/Planets.module.scss';
+import styles from '../../styles/pages/Moon.module.scss';
 
 async function getData() {
    const res = await fetch('https://api.le-systeme-solaire.net/rest/bodies/');
@@ -12,7 +15,7 @@ async function getData() {
    return res.json();
 }
 
-export default async function Planets() {
+export default async function Moon() {
    const data = await getData();
 
    return (
@@ -24,8 +27,10 @@ export default async function Planets() {
          </div>
          <header className={styles.header}>
             <nav className={styles.navbar}>
-               <Image src="/assets/planet_earth.png" alt="Moon" width={100} height={100} />
-
+               <Image src="/assets/moon.png" alt="Moon" width={100} height={100} />
+               <Image src="/assets/blue_moon.png" alt="Moon" width={100} height={100} />
+               <Image src="/assets/red_moon.png" alt="Moon" width={100} height={100} />
+               <Image src="/assets/moon.png" alt="Moon" width={100} height={100} />
                <Link href="/">
                   {' '}
                   <Image src="/assets/atronaut_01.png" width={50} height={50} alt="Astronaut image" />

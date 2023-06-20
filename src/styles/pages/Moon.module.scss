@@ -5,7 +5,7 @@
    color: $white;
 
    .navbar {
-      @include flexbox(flex, row, nowrap, space-between, center);
+      @include flexbox(flex, row, nowrap, space-between, flex-start);
       // @include neo(50px, 21px);
       @include richtext;
 
@@ -28,6 +28,11 @@
    @include container;
 
    h3 {
+      @include f-medium;
+      color: $darkgray;
+   }
+
+   p {
       @include f-medium;
       color: $darkgray;
    }

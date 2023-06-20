@@ -1,0 +1,36 @@
+.header {
+   @include container;
+   @include f-normal;
+
+   // display: flex;
+   // align-items: center;
+
+   // color: $white;
+
+   .navbar {
+      @include flexbox(flex, row, nowrap, space-between, flex-start);
+      @include richtext;
+
+      // h1 {
+      //    @include f-big;
+      //    color: $blue;
+      // }
+
+      // a {
+      //    color: $red;
+
+      //    &.second-anchor {
+      //       color: $darkergray;
+      //    }
+      // }
+   }
+}
+
+.main {
+   @include container;
+
+   h3 {
+      @include f-medium;
+      color: $darkgray;
+   }
+}

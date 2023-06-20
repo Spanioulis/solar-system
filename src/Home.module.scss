@@ -9,17 +9,45 @@
       // @include neo(50px, 21px);
       @include richtext;
 
-      h1 {
-         @include f-big;
-         color: $blue;
+      .block1 {
+         display: flex;
+         align-items: center;
+         flex-grow: 1;
+         flex-basis: 1px;
+
+         a {
+            &:hover {
+               text-decoration: none;
+            }
+
+            h1 {
+               @include f-big;
+               color: $purple;
+
+               &:hover {
+                  color: $red;
+               }
+            }
+         }
       }
 
-      a {
-         color: $red;
+      .nav1 {
+         a {
+            color: $gray;
+            display: inline-block;
+            padding: 1rem;
 
-         &.second-anchor {
-            color: $darkergray;
+            &.second-anchor {
+               color: $darkergray;
+            }
          }
+      }
+
+      .nav2 {
+         display: flex;
+         justify-content: flex-end;
+         flex-grow: 1;
+         flex-basis: 1px;
       }
    }
 }

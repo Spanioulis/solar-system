@@ -1,0 +1,17 @@
+.planet_card {
+   @include container;
+   @include flexbox(flex, row, wrap, space-between, flex-start);
+   background-color: rgba(0, 0, 0, 0.3);
+   gap: 1rem;
+   max-width: 650px;
+
+   p {
+      @include f-medium;
+      color: $darkgray;
+      line-height: 30px;
+
+      strong {
+         color: $darkergray;
+      }
+   }
+}

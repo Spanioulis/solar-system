@@ -1,7 +1,7 @@
 import '../styles/globals.scss';
 import { Space_Grotesk } from 'next/font/google';
 
-const spaceGrotesk = Space_Grotesk({ weight: '400', subsets: ['latin'] });
+const font = Space_Grotesk({ weight: '400', subsets: ['latin'] });
 
 export const metadata = {
    title: 'Solar System',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
    return (
       <html lang="en">
-         <body className={spaceGrotesk.className}>{children}</body>
+         <body className={font.className}>{children}</body>
       </html>
    );
 }

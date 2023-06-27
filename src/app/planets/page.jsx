@@ -50,7 +50,7 @@ export default async function Planets() {
             >
                {planets ? (
                   planets.slice(0, 10).map((planet) => (
-                     <SwiperSlide key={planet.id} className={styles.slide}>
+                     <SwiperSlide key={planet.id} className={styles['swiper-slide-page1']}>
                         <PlanetCard planet={planet} />
                      </SwiperSlide>
                   ))

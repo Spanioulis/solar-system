@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../Home.module.scss';
+import Parallax from '@/components/Parallax';
 
 export default function Home() {
    return (
@@ -38,13 +39,14 @@ export default function Home() {
                </nav>
             </nav>
          </header>
-         <main className={styles.main}>
+         {/* <main className={styles.main}>
             <div className={styles.container}>
                <div>
                   <Image src="/assets/atronaut_01.png" width={250} height={250} alt="Astronaut image" />
                </div>
             </div>
-         </main>
+         </main> */}
+         <Parallax />
       </>
    );
 }

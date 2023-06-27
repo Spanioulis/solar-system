@@ -51,15 +51,3 @@
       }
    }
 }
-
-.main {
-   // @include container;
-
-   .container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      min-height: 85vh;
-      overflow: hidden;
-   }
-}

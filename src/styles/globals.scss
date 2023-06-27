@@ -8,32 +8,25 @@ body {
    background-color: $black;
 }
 
-// Swiper
-.swiper-slide {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-}
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
    background: transparent;
-   color: $bluelight;
+   color: transparent;
 
-   :hover {
-      color: $red;
-   }
+   // :hover {
+   //    color: $red;
+   // }
 
    // TODO -> Cambiar flechas desde aquí:
 
-   // content: '';
-   // background: url('/assets/shooting_star_02.png') center no-repeat;
-   //    background-size: contain;
+   content: '';
+   background: url('/assets/astronaut_02.png') center no-repeat;
+   background-size: contain;
 
-   //    display: inline-block;
-   //    height: 15em;
-   //    width: 30rem;
-   //    margin-left: 1rem;
-   //    margin-right: 5rem;
+   display: inline-block;
+   justify-content: flex-start;
+   // height: 150px;
+   // width: 150px;
+   // margin-left: 1rem;
+   // margin-right: 5rem;
 }

@@ -10,16 +10,22 @@ body {
 
 // Swiper
 .swiper-slide {
-   display: flex !important;
-   align-items: center !important;
-   justify-content: center !important;
-   flex-direction: column !important;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
    background: transparent;
    color: $bluelight;
+
+   :hover {
+      color: $red;
+   }
+
+   // TODO -> Cambiar flechas desde aquí:
 
    // content: '';
    // background: url('/assets/shooting_star_02.png') center no-repeat;

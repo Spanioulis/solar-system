@@ -28,7 +28,7 @@ export default async function Planets() {
       <>
          <div>
             <div style={{ zIndex: -1, position: 'fixed', width: '100vw', height: '100vh', opacity: 0.2 }}>
-               <Image src="/assets/moon.png" alt="Sticky star" fill style={{ objectFit: 'cover' }} />
+               <Image src="/assets/milky_way_03.png" alt="Sticky star" fill style={{ objectFit: 'cover' }} />
             </div>
          </div>
          <header className={styles.header}>
@@ -49,7 +49,7 @@ export default async function Planets() {
                scrollbar={{ draggable: true }}
             >
                {planets ? (
-                  planets.map((planet) => (
+                  planets.slice(0, 10).map((planet) => (
                      <SwiperSlide key={planet.id} className={styles.slide}>
                         <PlanetCard planet={planet} />
                      </SwiperSlide>

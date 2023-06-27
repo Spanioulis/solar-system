@@ -4,11 +4,9 @@ import styles from '../../styles/pages/Gallery.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-cube';
-import 'swiper/css/pagination';
+import 'swiper/swiper-bundle.min.css';
 
-import '../../styles.css';
+import '../../swiper-gallery.css';
 
 // import required modules
 import { EffectCube, Pagination } from 'swiper';
@@ -22,7 +20,7 @@ export default function Gallery() {
       <>
          <div>
             <div style={{ zIndex: -1, position: 'fixed', width: '100vw', height: '100vh', opacity: 0.2 }}>
-               <Image src="/assets/moon.png" alt="Sticky star" fill style={{ objectFit: 'cover' }} />
+               <Image src="/assets/milky_way_01.png" alt="Sticky star" fill style={{ objectFit: 'cover' }} />
             </div>
          </div>
 

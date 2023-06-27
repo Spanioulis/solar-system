@@ -23,7 +23,7 @@ export default function Home() {
                <nav className={styles.nav1}>
                   <Link href="/planets">Planets</Link>
                   <Link href="/moon">Moon</Link>
-                  <Link href="/">Sun</Link>
+                  <Link href="/gallery">Gallery</Link>
                </nav>
 
                <nav className={styles.nav2}>

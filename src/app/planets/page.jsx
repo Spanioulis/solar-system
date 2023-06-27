@@ -5,15 +5,10 @@ import Link from 'next/link';
 import styles from '../../styles/pages/Planets.module.scss';
 import PlanetCard from '@/components/PlanetCard';
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
+// Swiper
+import { Navigation, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/swiper.min.css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import 'swiper/swiper-bundle.min.css';
 
 async function getData() {
    const res = await fetch('https://api.le-systeme-solaire.net/rest/bodies/');
@@ -45,29 +40,25 @@ export default async function Planets() {
                </Link>
             </nav>
          </header>
-         {/* <main className={styles.main}> */}
-         <Swiper
-            // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={100}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log('slide change')}
-         >
-            {planets ? (
-               planets.map((planet) => (
-                  <SwiperSlide key={planet.id} className={styles.slide}>
-                     <PlanetCard planet={planet} />
-                  </SwiperSlide>
-               ))
-            ) : (
-               <p>...loading</p>
-            )}
-         </Swiper>
-         {/* </main> */}
+         <main className={styles.main}>
+            <Swiper
+               modules={[Navigation, Scrollbar, A11y]}
+               spaceBetween={100}
+               slidesPerView={1}
+               navigation
+               scrollbar={{ draggable: true }}
+            >
+               {planets ? (
+                  planets.map((planet) => (
+                     <SwiperSlide key={planet.id} className={styles.slide}>
+                        <PlanetCard planet={planet} />
+                     </SwiperSlide>
+                  ))
+               ) : (
+                  <p>...loading</p>
+               )}
+            </Swiper>
+         </main>
       </>
    );
 }

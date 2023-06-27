@@ -2,7 +2,7 @@ import styles from '../styles/components/PlanetCard.module.scss';
 
 const PlanetCard = ({ planet }) => {
    return (
-      <>
+      <div className={styles.container}>
          <h2>{planet?.englishName}</h2>
          <div className={styles.planet_card}>
             <div className={styles['block-left']}>
@@ -59,7 +59,7 @@ const PlanetCard = ({ planet }) => {
                </p>
             </div>
          </div>
-      </>
+      </div>
    );
 };
 

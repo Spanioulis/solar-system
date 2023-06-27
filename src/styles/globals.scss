@@ -7,3 +7,27 @@
 body {
    background-color: $black;
 }
+
+// Swiper
+.swiper-slide {
+   display: flex !important;
+   align-items: center !important;
+   justify-content: center !important;
+   flex-direction: column !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+   background: transparent;
+   color: $bluelight;
+
+   // content: '';
+   // background: url('/assets/shooting_star_02.png') center no-repeat;
+   //    background-size: contain;
+
+   //    display: inline-block;
+   //    height: 15em;
+   //    width: 30rem;
+   //    margin-left: 1rem;
+   //    margin-right: 5rem;
+}

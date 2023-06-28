@@ -1,7 +1,16 @@
-.container {
+.section_1 {
+   height: 100vh;
    display: flex;
+   align-items: center;
    justify-content: center;
-   align-items: flex-end;
-   min-height: 84vh;
-   overflow: hidden;
+}
+
+.section_2 {
+   height: 100vh;
+
+   .square {
+      height: 250px;
+      width: 250px;
+      background-color: salmon;
+   }
 }

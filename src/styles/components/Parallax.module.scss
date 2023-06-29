@@ -1,16 +1,23 @@
 .section_1 {
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   // height: 100vh;
+   .ast1 {
+      align-items: flex-end;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+   }
 }
 
 .section_2 {
-   height: 100vh;
+   // align-items: flex-end;
+   // display: flex;
+   // height: 100vh;
+   // justify-content: flex-end;
 
-   .square {
-      height: 250px;
-      width: 250px;
-      background-color: salmon;
+   .ast2 {
+      height: 100vh;
+      // bottom: 0;
+      // position: relative;
+      // right: 0;
    }
 }

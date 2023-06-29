@@ -1,7 +1,7 @@
 import '../styles/globals.scss';
-import { Space_Grotesk } from 'next/font/google';
+import { Space_Grotesk, Noto_Sans_JP } from 'next/font/google';
 
-const font = Space_Grotesk({ weight: '400', subsets: ['latin'] });
+const font = Noto_Sans_JP({ subsets: ['latin'] });
 
 export const metadata = {
    title: 'Solar System',

@@ -6,9 +6,13 @@
 
 body {
    background-color: $black;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
    overflow-x: hidden;
 }
 
+// Flechas Swiper (TODO -> Cambiar!)
 .swiper-button-next::after,
 .swiper-button-prev::after {
    background: transparent;
@@ -17,8 +21,6 @@ body {
    // :hover {
    //    color: $red;
    // }
-
-   // TODO -> Cambiar flechas desde aquí:
 
    content: '';
    background: url('/assets/astronaut_02.png') center no-repeat;

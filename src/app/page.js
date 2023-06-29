@@ -7,7 +7,7 @@ export default function Home() {
    return (
       <>
          <div style={{ zIndex: -1, position: 'fixed', width: '100vw', height: '100vh', opacity: 0.2 }}>
-            <Image src="/assets/stars.png" alt="Sticky star" fill style={{ objectFit: 'cover' }} />
+            <Image src="/assets/background_stars.png" alt="Sticky star" fill style={{ objectFit: 'cover' }} />
          </div>
          <header className={styles.header}>
             {/* TODO -> Cambiarlo como el de TESLA */}
